@@ -1,0 +1,254 @@
+/*----------------Main Webfonts-----------------*/
+
+@font-face{
+    font-family: Poppins-light;
+    src: url('../webfonts/poppins/Poppins-Light.ttf') format('truetype');
+}
+@font-face{
+    font-family: Poppins-Regular;
+    src: url('../webfonts/poppins/Poppins-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: Poppin-Medium;
+    src: url('../webfonts/poppins/Poppins-Medium.ttf') format('truetype');
+}
+@font-face{
+    font-family: Poppins-SemiBold;
+    src: url('../webfonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+@font-face{
+    font-family: fa-brands-400;
+    src: url('../webfonts/poppins/fa-brands-400.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#bg-img{
+    background: url('../images/school-building-4.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#bg-img::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+}
+.login-page{
+    position: absolute;
+    left: 42%;
+    top: 22%;
+    transform: translate(-50px, -50px);
+    text-align: center;
+    background: rgba(255, 255, 255, .06);
+    z-index: 999;
+    width: 500px;
+    padding: 50px 40px;
+    box-shadow: -1px -2px 40px 10px rgba(0,0,0,0.75) ;
+    border-radius: 5px;
+
+}
+.login-page > header{
+    color: #fff;
+    font-family:'Poppins-Light', sans-serif;
+    font-size: 24px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+.field{
+    position: relative;
+    height: 45px;
+    display: flex;
+    width: 100%;    
+    background: rgba(255, 255, 255, 0.94);
+}
+
+.field input{
+    width: 100%;
+    height: 100%;
+    color: #222; 
+    font-family: 'Poppins-Light',sans-serif;
+    border: none;
+    background: transparent;
+    outline: none; 
+}
+.field i{
+    width: 40px;
+    line-height: 40px;
+}
+.show{
+    position: absolute;
+    right: 10px;
+    font-size: 14px;
+    font-family: 'Poppins-Light',sans-serif;
+    top: 10px;
+    color: #222;
+    display: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+.password:valid ~ .show{
+    display: block;
+}
+.space{
+    margin-top: 15px;
+}
+.pass{
+    text-align: left;
+    margin: 10px 0;
+}
+.pass a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins-Light',sans-serif;
+    transition: all .4s linear ;
+   
+}
+.pass:hover a{
+    text-decoration: underline;  
+}
+.login-page .login{
+    background: #3498db;
+    border: 1px solid #2691d9;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.login-page .login:hover{
+    background-color: #077ece;
+}
+.facebook-instagram{
+    color: #fff;
+    font-family: 'Poppins-Light',sans-serif;
+    padding: 20px 0;
+}
+.link{
+    display: flex;
+    color: white;    
+}
+.link span{
+    font-family: 'poppins-SemiBold',sans-serif;
+    margin-left: 4px;
+}
+.facebook, .instagram{
+    width: 100%;
+    height: 42px;
+    line-height: 45px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s linear;
+}
+.facebook{
+    background: #4267b2; 
+    margin-right: 10px;   
+    border: 1px solid #3e61a8;
+}
+.facebook:hover{
+    background: #1049be; 
+}
+.instagram{
+    background: #e1306c;
+    border: #df2060;
+}
+.instagram:hover{
+    background:#c41551;
+}
+.sahifa {
+    padding: 0.5rem;
+    width: 15rem;
+    margin-left: 6rem;
+    margin-top: 1.6rem;
+    border-radius: 6px; 
+    font-family: 'Poppins-SemiBold';
+    background: #3498DB;
+    color: white;
+    transition: all 0.3s linear;
+}
+.sahifa input {
+    background: transparent;
+    border: transparent;
+    color: #fff;
+}
+.sahifa:hover {
+    background: #077ece;
+}
+
+
+
+
+
+
+/* -------------Media Querie------------ */
+
+
+@media screen and (min-width:300px) and (max-width:400px) {
+    .login-page {
+        width: 280px;
+        margin-left: -3.8rem;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:500px) {
+    .login-page {
+        width: 350px;
+        margin-left: -6rem;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:600px) {
+    .login-page {
+        width: 400px;
+        margin-left: -7rem;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:800px) {
+    .login-page {
+        /* width: 350px; */
+        margin-left: -9.4rem;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:1000px) {
+    .login-page {
+        /* width: 350px; */
+        margin-left: -8rem;
+    }
+}
+
+@media screen and (min-width:1001px) and (max-width:1400px) {
+    .login-page {
+        /* width: 350px; */
+        margin-left: -6rem;
+    }
+}
+
+@media screen and (min-width:1401px) and (max-width:1600px) {
+    .login-page {
+        /* width: 350px; */
+        margin-left: -4rem;
+    }
+}
+
+@media screen and (min-width:1601px){
+    .login-page {
+        /* width: 350px; */
+        margin-left: -2rem;
+    }
+}
+
+
+
+

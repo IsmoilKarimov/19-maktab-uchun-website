@@ -1,0 +1,150 @@
+  /*----------------Main Webfonts-----------------*/
+
+@font-face{
+    font-family: Poppins-light;
+    src: url('../webfonts/poppins/Poppins-Light.ttf') format('truetype');
+}
+@font-face{
+    font-family: Poppins-Regular;
+    src: url('../webfonts/poppins/Poppins-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family: Poppin-Medium;
+    src: url('../webfonts/poppins/Poppins-Medium.ttf') format('truetype');
+}
+@font-face{
+    font-family: Poppins-SemiBold;
+    src: url('../webfonts/poppins/Poppins-SemiBold.ttf') format('truetype');
+}
+@font-face{
+    font-family: fa-brands-400;
+    src: url('../webfonts/poppins/fa-brands-400.ttf') format('truetype');
+}
+
+.button {
+    border-radius: 3px;
+    padding: 3px;
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+
+.active{
+    color: #E6E6FA;
+}
+
+.navbar .navbar-brand:hover{
+    color: #dbe2ea;
+    background-color: darkslategrey;
+}
+
+.navbar .navbar-nav .nav-link{
+    color: #fff;
+}
+
+.navbar .navbar-brand{
+    font-family: 'Poppins-Semibold',sans-serif;
+    font-size: 27px;
+    color: black; 
+    display: block;   
+    background-color: lavender;
+    padding: 15px;
+    border-radius: 40px;
+    transition: all 0.6s linear;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: #dbe2ea;
+}
+
+header .navbar-light .navbar-nav .nav-link{
+    padding:0 15px 10px 15px ;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+}
+
+.main-section{
+    background-image: url(../images/19-maktab_picture.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.name-school{
+    padding: 20% 10%;
+    color: #fff;
+    text-align: center;
+}
+
+.card{
+    background-color: beige;
+    width: 350px;
+    height: 460px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.card .card-header img {
+    width: 349px;
+    border-radius: 6px;
+    height: 260px;
+    margin: -12px -20px -13px -20px;
+}
+
+main #aboutSchool .method #title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+}
+.method{
+    padding: 5rem 0;
+}
+
+main .container-fluid{
+    background-color: #f9f9f9;
+}
+#subjects .text-center img{
+    border-radius:50%;
+    width: 20%;
+}
+
+.footer-bottom{
+    background-color: #068ca0;
+}
+
+.navbar-light .navbar-nav .show >
+ .nav-link, .navbar-light .navbar-nav .active > .navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+}
+ .navbar-light .navbar-nav .nav-link:focus {
+   color: #fff;
+   font-weight: 600;
+}
+
+.navbar-nav .nav-item .dropdown-item {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-nav .nav-item .dropdown-item:hover{
+    color: #E6E6FA;
+}
+
+footer .myWebsite {
+    padding: 0;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+}
+
